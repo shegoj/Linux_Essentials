@@ -183,3 +183,6 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 
 We have looked at Linux basic commands, directory and files manipulation.For more challenging practical over what we have covered today, check here
 
+Here is Linux timeline representation of the distros.. 
+![](https://en.wikipedia.org/wiki/Linux_distribution#/media/File:Linux_Distribution_Timeline.svg)
+
