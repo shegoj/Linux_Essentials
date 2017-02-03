@@ -95,18 +95,20 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 - create a directory called `events and  go into the the directory
 - create `2016` directory in `events`
 - Now create Jan-Dec ( or 1-12) directories in `2016`.
+- Now list all the directories created.
+- Determine the absoluet directory of `Jan` directory.
 
 ####  Determine your current location on the system
         pwd
 
 ####  Go to your home directory and confirm you are in your home directory.
-        cd ~  .Note: you could also use `cd`
+        cd ~  Note: you could also use cd
         pwd
 ####  Go back to where you where before getting your home directory.
         cd  
         pwd
 ####  Go to your home directory and confirm you are in your home directory. 
-        cd ~  .Note: you could also use `cd`
+        cd ~  Note: you could also use cd
         pwd
 
 ####  Create a directory called `events`and go into the directory
@@ -121,64 +123,63 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
         mkdir Jan 
         mkdir Feb 
         
+####  Now list all the directories created: 
+        ls -l
 
-### Step 4
+### Task 4: Working with `echo` 
 
-- Create a `Jenkinsfile`
-
-    ```
-    #!/usr/bin/env groovy
-
-    // docker tags must be in lower case
-    env.DOCKER_TAG = BUILD_TAG.toLowerCase()
-
-    stage("build") {
-      node {
-        checkout scm
-        sh 'docker build -t $DOCKER_TAG .'
-        sh 'docker run --rm $DOCKER_TAG'
-      }
-    }
-    ```
-
-- git add, commit, push
-
-- Navigate to https://ci-jenkins.yoox.net/job/train/
-
-    _Jenkins polls every 1min, so you may need to wait/refresh_
-
-    _You should see an entry for YOURNAME-helloworld, navigate into it and watch it build_
-
-### Step 5
-
-- Let's modify the script, and see the changes in CI, replace `hello-world.go` with the following
+- Echo command is used to spew out a message. By default echo will direct( or spew) a message to the computer console ( screen).
 
     ```
-    package main
-
-    import(
-      "fmt"
-      "runtime"
-    )
-
-    func main(){
-      fmt.Printf("hello world, I'm running on %s with an %s CPU ", runtime.GOOS, runtime.GOARCH)
-    }
+    echo I am your tutor
+    echo "I am your tutor"
+    echo "which directory am I?"
+    echo "you are in $(pwd) directory" 
+    echo -e "which directory am I? \n You are in `pwd` directory"
+    echo -e "Even Linux is good with color...  \033[32mGreen\033[m and \033[41mRed(underlined)\033[m and \033[0;36mCyan\033[m ..."
     ```
 
-- git add, commit, push
+### Task 5:  Direct each of the commands about to a file 
 
-- watch the job in jenkins, you should see something like the following as the output
 
     ```
-    hello world, I'm running on linux with an amd64 CPU
+    echo I am your tutor > file1.txt
+    echo "I am your tutor" > file2.txt
+    echo "which directory am I?" > file3.txt
+    echo "you are in $(pwd) directory" > file4.txt 
+   ```
+
+### Task 6: view the content of the file(s) with `cat` `more` and `less` commands   
+
+
     ```
+    cat file1.txt
+    cat file1.txt file2.txt
+    cat *.txt
+
+    more file3.txt
+    less file3.txt
+    ```
+
+### Task 7: Merge all the files created into one mega file . Call it mega.txt. Check the content
+
+    ```
+    cat *.txt >> mega.txt
+    cat mega.txt
+    ```
+
+### Task 8: Working with file copying, renaming/moving and deleting files and directories 
+
+- copy mega.txt to a new file called database.db
+- delete mega.txt
+- rename file1.txt to firstfile.txt
+- move all the .txt files to Jan directory
+- rename Jan directory to January directory
+- delete Feb directory 
 
 ---
 
 ## Summary
 
-This is a very basic example, hopefully you can see how easy it was to perform basic CI against a script.  This becomes far more powerful when it runs against a Pull Request, allowing others to see your change and that it worked successfully.
-
-For a far more intensive practical, see the [02_intense_practical](02_intense_practical.md) file
+We have looked at Linux basic commands, directory and files manipulation.For more challenging practical over what we have covered today, check here
 
