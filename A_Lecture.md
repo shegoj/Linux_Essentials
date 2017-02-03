@@ -199,7 +199,7 @@ We have looked at Linux basic commands, directory and files manipulation.For mor
 
 Here is Linux timeline representation of the distros.. 
 
-    ![](image1.svg)
+    ![](/image1.svg)
  E.g.
 
-     ![](image1.svg)
+     ![](/image1.svg)
