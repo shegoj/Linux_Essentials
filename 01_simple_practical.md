@@ -78,23 +78,49 @@ The following installed and working
     who -u
     ```
 
-### Step 2. Working with shortcut keys.
+### Task 2. Working with shortcut keys.
 
 - working with tab key
 - working with reverse search key
 - working with ! key 
-### Step 3
 
-- Now we're ready to create a repository, and show our awesome code to our team
+### Task 3. Navigating across the system
 
-    1. navigate to https://git.yoox.net/projects/train
-    2. create a new repository YOURNAME-helloworld
+Note: Now that we are familiar with some of Linux commands, let's explore navigating and creating directories ( and files)
 
-- git init, add, commit and push your code
+- determine your current location on the system
+- go to your home directory and confirm you are in your home directory.
+- go back to where you where before getting your home directory
+- go to your home directory and confirm you are in your home directory.
+- create a directory called `events and  go into the the directory
+- create `2016` directory in `events`
+- Now create Jan-Dec ( or 1-12) directories in `2016`.
 
-- Navigate to https://ci-jenkins.yoox.net/job/train/
+####  Determine your current location on the system
+        pwd
 
-    _Note how there is no entry for your repository, it won't appear until you add a `Jenkinsfile`_
+####  Go to your home directory and confirm you are in your home directory.
+        cd ~  .Note: you could also use `cd`
+        pwd
+####  Go back to where you where before getting your home directory.
+        cd  
+        pwd
+####  Go to your home directory and confirm you are in your home directory. 
+        cd ~  .Note: you could also use `cd`
+        pwd
+
+####  Create a directory called `events`and go into the directory
+        mkdir events
+        cd events
+
+####  Create `2016` directory in `events`
+        mkdir 2016
+
+####  Create Jan-Dec ( or 1-12) directories in `2016` : 
+        cd 2016
+        mkdir Jan 
+        mkdir Feb 
+        
 
 ### Step 4
 
