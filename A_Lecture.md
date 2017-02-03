@@ -117,9 +117,8 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 ####  Now list all the directories created: 
         ls -l
 
-### Task 4: Working with `echo` 
+### Task 4: Working with `echo` command 
 
-- Echo command is used to spew out a message. By default echo will direct( or spew) a message to the computer console ( screen).
 
     echo I am your tutor
     echo "I am your tutor"
