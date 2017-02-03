@@ -1,6 +1,6 @@
 #  Linux Essentials 1 [ Februrary 2017]
 
-This guide provides a simple practical steps to learning and using Linux. It will take about an hour to complete
+This guide provides simple practical steps to learning and using Linux. It will take about an hour to complete
 
 ---
 
@@ -12,13 +12,13 @@ You will try out different Linux commands to  solve real life problems as a way 
 
 ## Intended Audience
 
-Users who undertand basic concept of the compuet system.
+Users who undertand basic concept of the computer system.
 
 ---
 
 ## Requirements
 
-The following installed and working
+Ensure the following is installed and working
 
 - putty https://www.dropbox.com/sh/cho8pwn3tlfz37o/AADcF15c1vXwVhu4LE23BkVIa?dl=0 
 - set it up as directed by the instructor
@@ -41,6 +41,8 @@ The following installed and working
 - System start, stop, crash history
 - Determine if you are running out of space on the system
 - Number of users currently connected to the machine
+- Check how much memory is on the system and how much is used and free.
+- Check the number of CPUs on the system and its details 
 
 #### Linux Type, version and kernel number
 
@@ -69,6 +71,15 @@ The following installed and working
 
     who -u
 
+####   Check how much memory is on the system and how much is used and free
+
+    free -m .You can also try cat /proc/meminfo
+
+#### Check how much memory is on the system and how much is used and free
+    lscpu
+
+
+
 ### Task 2. Working with shortcut keys.
 
 - working with tab key
@@ -81,13 +92,13 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 
 - determine your current location on the system
 - go to your home directory and confirm you are in your home directory.
-- go back to where you where before getting your home directory
+- go back to where you were before getting your home directory
 - go to your home directory and confirm you are in your home directory.
 - create a directory called `events and  go into the the directory
 - create `2016` directory in `events`
 - Now create Jan-Dec ( or 1-12) directories in `2016`.
 - Now list all the directories created.
-- Determine the absoluet directory of `Jan` directory.
+- Determine the absolute directory of `Jan` directory.
 
 ####  Determine your current location on the system
         pwd
@@ -95,7 +106,7 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 ####  Go to your home directory and confirm you are in your home directory.
         cd ~  Note: you could also use cd
         pwd
-####  Go back to where you where before getting your home directory.
+####  Go back to where you were before getting your home directory.
         cd  
         pwd
 ####  Go to your home directory and confirm you are in your home directory. 
@@ -156,7 +167,8 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 - delete mega.txt
 - rename file1.txt to firstfile.txt
 - move all the .txt files to Jan directory
-- rename Jan directory to January directory
+- rename Jan directory to January 
+- copy January directory to February 
 - delete Feb directory 
 
 #### copy mega.txt to a new file called database.db
@@ -174,6 +186,9 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 #### Rename Jan directory to January directory
      mv Jan January . You could also use mv Jan{,uanry}
 
+#### Copy January directory February
+     cp -r January February 
+
 #### Delete Feb directory
     rm -rf Feb
 ---
@@ -183,5 +198,5 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 We have looked at Linux basic commands, directory and files manipulation.For more challenging practical over what we have covered today, check here
 
 Here is Linux timeline representation of the distros.. 
-        ![](https://en.wikipedia.org/wiki/Linux_distribution#/media/File:Linux_Distribution_Timeline.svg)
 
+    ![](image1.svg)
