@@ -49,34 +49,25 @@ The following installed and working
 
 #### Name, IP address, number of network card (interface) and how long it has been up
 
-    ```
     hostname ; uname -n
     ip address ; ifconfig
 
-    ```
 
 #### How long it has been up 
 
-    ```
     uptime -s
-    ```
 
 #### System start, stop, crash history
 
-    ```
     last
-    ```
+
 #### Determine if you are running out of space on the system 
 
-    ```
     df -h
-    ```
 
 #### Number of users currently connected to the machine
 
-    ```
     who -u
-    ```
 
 ### Task 2. Working with shortcut keys.
 
@@ -130,43 +121,35 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 
 - Echo command is used to spew out a message. By default echo will direct( or spew) a message to the computer console ( screen).
 
-    ```
     echo I am your tutor
     echo "I am your tutor"
     echo "which directory am I?"
     echo "you are in $(pwd) directory" 
     echo -e "which directory am I? \n You are in `pwd` directory"
     echo -e "Even Linux is good with color...  \033[32mGreen\033[m and \033[41mRed(underlined)\033[m and \033[0;36mCyan\033[m ..."
-    ```
 
 ### Task 5:  Direct each of the commands about to a file 
 
 
-    ```
     echo I am your tutor > file1.txt
     echo "I am your tutor" > file2.txt
     echo "which directory am I?" > file3.txt
     echo "you are in $(pwd) directory" > file4.txt 
-   ```
 
 ### Task 6: view the content of the file(s) with `cat` `more` and `less` commands   
 
 
-    ```
     cat file1.txt
     cat file1.txt file2.txt
     cat *.txt
 
     more file3.txt
     less file3.txt
-    ```
 
 ### Task 7: Merge all the files created into one mega file . Call it mega.txt. Check the content
 
-    ```
     cat *.txt >> mega.txt
     cat mega.txt
-    ```
 
 ### Task 8: Working with file copying, renaming/moving and deleting files and directories 
 
