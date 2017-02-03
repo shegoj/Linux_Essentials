@@ -44,11 +44,8 @@ The following installed and working
 
 #### Linux Type, version and kernel number
 
-    ```
     cat /etc/*release*
     uname -r ; uname -a
-
-    ```
 
 #### Name, IP address, number of network card (interface) and how long it has been up
 
