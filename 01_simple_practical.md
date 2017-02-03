@@ -80,9 +80,9 @@ The following installed and working
 
 ### Step 2. Working with shortcut keys.
 
--working with tab key
--working with reverse search key
--working with ! key 
+- working with tab key
+- working with reverse search key
+- working with ! key 
 ### Step 3
 
 - Now we're ready to create a repository, and show our awesome code to our team
