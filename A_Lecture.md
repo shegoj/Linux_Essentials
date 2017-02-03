@@ -160,6 +160,23 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 - rename Jan directory to January directory
 - delete Feb directory 
 
+#### copy mega.txt to a new file called database.db
+     cp mega.txt database.db
+
+#### Delete meg.txt
+     rm mega.txt 
+
+#### Rename file1.txt to firstfile.txt
+     mv  file1.txt firstfile.txt
+
+#### Move all the .txt files to Jan directory
+     mv *.txt Jan
+
+#### Rename Jan directory to January directory
+     mv Jan January . You could also use mv Jan{,uanry}
+
+#### Delete Feb directory
+    rm -rf Feb
 ---
 
 ## Summary
