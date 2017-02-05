@@ -35,8 +35,7 @@ Ensure the following is installed and working
 
 ---
 
-###  Task 1: File creation and Manipulation with VIM/VI: You have been asked by a senior admininstrator to provide the following information of a Linux server
-
+###  Task 1: File creation and Manipulation with VIM/VI: You have been asked by a senior admininstrator to perform the following tasks
 - create a file [ config.txt ] using vi/vim with the following content: " This is a simple config file created using vim"
 - Add a second line to the file : "Config file is now created and saved"
 - Add a line between first ad second line with this content:  "Config file has been cehcked for errors"
@@ -141,10 +140,14 @@ Ensure the following is installed and working
 
 ####  View the text file here without downloading it http://www.rfc-base.org/txt/rfc-959.txt. Then download the file
     curl http://www.rfc-base.org/txt/rfc-959.txt
+
+#### download files
     wget http://www.rfc-base.org/txt/rfc-959.txt
+    wget http://www.dynaexamples.com/examples-manual/ls-dyna_example.tgz/at_download/file
 
 ####  delete the two files downloaded
     rm  rfc-959.txt file
+
 ####  Download the two files again as  rfc.txt and sample.tar  respectively
     wget http://www.rfc-base.org/txt/rfc-959.txt -O file.txt ( curl -o rfc.txt http://www.rfc-base.org/txt/rfc-959.txt)
     wget http://www.dynaexamples.com/examples-manual/ls-dyna_example.tgz/at_download/file -O sample.tar ( curl -o sample.tar http://www.dynaexamples.com/examples-manual/ls-dyna_example.tgz/at_download/file)
