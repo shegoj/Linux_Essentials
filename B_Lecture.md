@@ -176,10 +176,10 @@ Ensure the following is installed and working
     cd ..
     tar cvf 2016backup.tar 2016
 
-#### now delete 2016 directory and restore it from the backup previously created
+#### now delete 2016 directory and restore it from the backup previously created 
 
-   rm -rf 2016
-   tar xvf 2016backup.tar
+    rm -fr 2016
+    tar xvf 2016backup.tar 
 
 
 ### Task 3: greping and finding files
