@@ -177,6 +177,7 @@ Ensure the following is installed and working
     tar cvf 2016backup.tar 2016
 
 #### now delete 2016 directory and restore it from the backup previously created
+
    rm -rf 2016
    tar xvf 2016backup.tar
 
