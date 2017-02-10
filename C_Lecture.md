@@ -111,8 +111,8 @@ Ensure the following is installed and working
      service httpd restart
      
      Test
-     curl http://localhost { will no longer work}
-     curl http://localhost:8081
+     lynx http://localhost { will no longer work}
+     lynx http://localhost:8081
 
 ####  Change it back
      Restore backup file
@@ -122,7 +122,7 @@ Ensure the following is installed and working
      service httpd restart
      
      Test
-     curl http://localhost { show now work}
+     lynx http://localhost { show now work}
   
      
      
@@ -158,69 +158,93 @@ Ensure the following is installed and working
 
 ### Task 3: Using Apache as a Web Server: Your boss has provided you arifact.tar file which should be deployed in your web sebevr
 
-- Download and deploy the artfact file (artifact.tar)  
-- Test that is is working as required 
+- Download and deploy the artfact file (https://github.com/shegoj/Linux_Essentials/blob/master/artifacts.tar?raw=true)  
+- Test that it is working as required 
 - Add your name to the index file( as the author of the file)
 - Check that the update has taken effect
 
 
-#### search for all  files and sub-directories in the current directory 
+#### Download and deploy the artfact file 
     
-     find . ( find . -ls)
+     cd /var/www/html
+     wget https://github.com/shegoj/Linux_Essentials/blob/master/artifacts.tar?raw=true -O artifacts.tar
+     tar xvf artifacts.tar && rm -f artifacts.tar
 
-#### search for  only files and directories on the current directory. No recussive search . 
-     find . -maxdepth 1 -ls
+#### Test that it is working as required . 
+     lynx http://localhost
 
-#### Now, try again, search only for files
-     find . -maxdepth 1 -type f -ls
+#### Add your name to the index file( as the author of the file)
+     vim /var/www/html/index.html  
+     look for the word tutor and replace with your name
 
-#### do a count of the files found
+#### Check that the update has taken effect
 
-     find . -maxdepth 1 -type f -ls | wc -l
-
-    
-#### search for file with contain the word 'FTP' in the current directory 
-
-     grep FTP *
-     grep -l FTP *
-
-#### go back one step out of the current directory... and perfom the search again
-
-    grep FTP *
-
-#### now do a recursive search for the word 'FTP'
-
-    grep -rl FTP *
-
-####  Go to the directory where rfc.txt is located and copy the file, name the new file as rfc2.txt
-
-    cp rfc.txt rfc2.txt
-
-#### replace the word 'FTP' in rfc.txt with 'FTP100'
-
-    sed -i 's#FTP#FTP100#g' rfc.txt 
-
-#### search ( recursive) for files with the word 'ftp or FTP' in them
-
-     grep -lri ftp *
+     lynx http://localhost
 
 
+### Task 4: Tracking HTTP packets/data..You web page should be exposed to the Internet for this exercise
 
-### Task 4: Tracking HTTP packets/data
-
-- Verify who is connecting to your webserver [ IP addresses etc]
+- Explore the page, click all weblink and login page . Try connect from different browsers, phones and pads. Also each student should ask another ( or as many as possible) to connect to hsi web server
+- Verify who has connected to your webserver [ IP addresses etc]
 - select an IP and verify how many times its connected.
-- What broswer did the user use?
+- What broswer did the user/IP address use?
 - Check the log file in real time
 - Check for errors logged by the web server
+
+
+#### Explore the page, click all weblink and login page
+
+
+#### Verify who has connected to your webserver [ IP addresses etc]
+
+    more /var/log/httpd/access_log
+
+#### select an IP and verify how many times its connected
+
+    grep {ip} /var/log/httpd/access_log
+    grep {ip} /var/log/httpd/access_log | wc -l
+
+####  What broswer did the user/IP address use?
+
+    more /var/log/httpd/access_log
+
+#### Check the log file in real time
+
+    tail -f /var/log/httpd/access_log
+
+#### Check for errors logged by the web server
+
+     more /var/log/httpd/error_log
+     Note: do you know what the error codes mean??
 
 ### Task 5: Tracking HTTP packets/data
 
 - Track  packet transaction between a host and the web server 
+- connect with your browser to the web server and start tracking the transaction via tcpdump on the server
 - verify the IP address connecting to your server, without using access.log file
-- Eavesdrop on a user password
+- use your broswer to go to the Login page. Put in a username and password and Eavesdrop on a user password on  the server
 
 
+
+#### Track  packet transaction between a host and the web server 
+
+    First install tcpdump package for this exrecise
+
+    tcpdump -A -i eth1 port 80  
+
+
+####  connect with your browser to the web server and start tracking the transaction via tcpdump on the server
+
+    You might need the tutor to explain certain tcp concepts to you here
+
+#### verify the IP address connecting to your server, without using access.log file
+
+    check the tcpdump output
+
+#### use your broswer to go to the Login page. Put in a username and password and Eavesdrop on a user password on  the server
+
+    check the tcpdump output
+    
 
 
 
@@ -228,16 +252,14 @@ Ensure the following is installed and working
 
 ### Task 6: Troublesshooting Connection issues
 
-- You are no longer able to see your page over the Internet  
-- verify the Ip address connecting to your server
-- Eavesdrop on a user password
+- You are no longer able to see your page over the Internet. Fix the issue  
+
 
 ### Task 7: working is IPTABLES for filtering Traffic
 
 - start iptables service 
 - check if you are able to connect to the server externally
 - update the IPtables filter and ensure you are now able to connect
-- Eavesdrop on a user password
 
-wge
-#### dis
+
+
