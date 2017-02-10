@@ -250,6 +250,8 @@ Ensure the following is installed and working
 
 ***************************************************************************
 
+[ Instructor's help Required ]
+
 ### Task 6: Troublesshooting Connection issues
 
 - You are no longer able to see your page over the Internet. Fix the issue  
