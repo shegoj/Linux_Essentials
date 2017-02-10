@@ -250,7 +250,7 @@ Ensure the following is installed and working
 
 ***************************************************************************
 
-[ Instructor's help Required ]
+[ Instructor's Help Required ]
 
 ### Task 6: Troublesshooting Connection issues
 
