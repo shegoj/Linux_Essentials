@@ -1,4 +1,5 @@
 #!/bin/bash
+# script written by Olusegun for AGS-Tech Training
 
 error_prefix="\033[41m"
 error_close="\033[m"
