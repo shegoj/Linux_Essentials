@@ -123,38 +123,7 @@ Ensure the following is installed and working
      
      Test
      lynx http://localhost { show now work}
-  
      
-     
-#### explore the content of  sample.tar without extracting the file
-    tar tvf sample.tar | more
-
-#### check the size of the two files (rfc.txt and sample.tar)
-    ls -l sample.tar rfc.txt
-
-##### Now extract the content of sample.tar into a new directory ( content)
-    mkdir content
-    tar xvf sample.tar -C content
-#### create a new tar file called newsample.tar . Content of the file should include extracted content of sample file and rfc.txt
-    cd content
-    tar cvf newsample.tar * ../rfc.txt
-
-#### confirm rfc.txt is included in the new tar.
-    tar tvf newsample.tar | more 
-    tar tvf newsample.tar | grep rfc.txt
-
-
-#### use tar to backup 2016 directory (use the name 2016_backup)
-
-    cd 2016
-    cd ..
-    tar cvf 2016backup.tar 2016
-
-#### now delete 2016 directory and restore it from the backup previously created 
-
-    rm -fr 2016
-    tar xvf 2016backup.tar 
-
 
 ### Task 3: Using Apache as a Web Server: Your boss has provided you arifact.tar file which should be deployed in your web sebevr
 
