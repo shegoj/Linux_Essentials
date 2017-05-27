@@ -128,7 +128,7 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 
 
 ####  Create 1..7 directories in `2016` : 
-        pwd  (ensure  you are still in `2006` directory
+        pwd  . To ensure  you are still in `2006` directory
         mkdir {1..7}   . Using curl bracket makes multiple creation of directories possible. See also mkdir {a..f}, mkdir {A..Z}, mkdir Project{1..4}
         
 ####  Now list all the directories created: 
