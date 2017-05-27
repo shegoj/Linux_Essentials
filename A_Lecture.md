@@ -1,4 +1,4 @@
-#  Linux Essentials 1 [ Februrary 2017]
+#  Linux Essentials 1 [ May 2017]
 
 This guide provides simple practical steps to learning and using Linux. It will take about an hour to complete
 
@@ -75,7 +75,7 @@ Ensure the following is installed and working
 
     free -m .You can also try cat /proc/meminfo
 
-#### Check how much memory is on the system and how much is used and free
+#### Check the number of CPUs on the system and its details
     lscpu
 
 
@@ -96,7 +96,7 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 - go to your home directory and confirm you are in your home directory.
 - create a directory called `events and  go into the the directory
 - create `2016` directory in `events`
-- Now create Jan-Dec ( or 1-12) directories in `2016`.
+- Now create Jan-Mar, and  1..7 directories in `2016`.
 - Now list all the directories created.
 - Determine the absolute directory of `Jan` directory.
 
@@ -120,10 +120,16 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 ####  Create `2016` directory in `events`
         mkdir 2016
 
-####  Create Jan-Dec ( or 1-12) directories in `2016` : 
+####  Create Jan-Mar ( or 1-12) directories in `2016` : 
         cd 2016
         mkdir Jan 
         mkdir Feb 
+        mkdir Mar 
+
+
+####  Create 1..7 directories in `2016` : 
+        pwd  (ensure  you are still in `2006` directory
+        mkdir {1..7}   . Using curl bracket makes multiple creation of directories possible. See also mkdir {a..f}, mkdir {A..Z}, mkdir Project{1..4}
         
 ####  Now list all the directories created: 
         ls -l
@@ -138,7 +144,7 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
     echo -e "which directory am I? \n You are in `pwd` directory"
     echo -e "Even Linux is good with color...  \033[32mGreen\033[m and \033[41mRed(underlined)\033[m and \033[0;36mCyan\033[m ..."
 
-### Task 5:  Direct each of the commands about to a file 
+### Task 5:  Direct each of the commands above to a file 
 
 
     echo I am your tutor > file1.txt

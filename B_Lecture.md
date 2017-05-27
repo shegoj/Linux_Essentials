@@ -1,4 +1,4 @@
-#  Linux Essentials 1 [ Februrary 2017]
+#  Linux Essentials 1 [ May 2017]
 
 ## Lecture 2 [ File Access And Manipulaton ]
 
@@ -156,7 +156,7 @@ Ensure the following is installed and working
     tar tvf sample.tar | more
 
 #### check the size of the two files (rfc.txt and sample.tar)
-    ls -l sample.tar rfc.txt
+    ls -l sample.tar rfc.txt . ALso try ls -lh sample.tar rfc.txt 
 
 ##### Now extract the content of sample.tar into a new directory ( content)
     mkdir content
