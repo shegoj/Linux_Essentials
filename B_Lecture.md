@@ -199,7 +199,7 @@ Ensure the following is installed and working
 
 #### search for all  files and sub-directories in the current directory 
     
-     find . ( find . -ls)
+     find .  Also consider  find . -ls
 
 #### search for  only files and directories on the current directory. No recussive search . 
      find . -maxdepth 1 -ls
@@ -254,7 +254,7 @@ Ensure the following is installed and working
 - display only the  names of users on this Linux machine  provisioned with bash shell
 
 #### - download address.csv file from here https://github.com/shegoj/Linux_Essentials/blob/master/address.csv
-      wget https://github.com/shegoj/Linux_Essentials/blob/master/address.csv (or copy the content and use vim/vi to create the file)
+      wget https://raw.githubusercontent.com/shegoj/Linux_Essentials/master/address.csv (or copy the content and use vim/vi to create the file)
 
 ####  backup the file as addressbook.csv
 
