@@ -149,7 +149,7 @@ Ensure the following is installed and working
     rm  rfc-959.txt file
 
 ####  Download the two files again as  rfc.txt and sample.tar  respectively
-    wget http://www.rfc-base.org/txt/rfc-959.txt -O file.txt ( curl -o rfc.txt http://www.rfc-base.org/txt/rfc-959.txt)
+    wget http://www.rfc-base.org/txt/rfc-959.txt -O rfc.txt . You could also use  curl -o rfc.txt http://www.rfc-base.org/txt/rfc-959.txt)
     wget http://www.dynaexamples.com/examples-manual/ls-dyna_example.tgz/at_download/file -O sample.tar ( curl -o sample.tar http://www.dynaexamples.com/examples-manual/ls-dyna_example.tgz/at_download/file)
 
 #### explore the content of  sample.tar without extracting the file
@@ -264,7 +264,7 @@ Ensure the following is installed and working
       cat addressbook.csv
 
 
-#### display the content of the file with header
+#### display the content of the file without the  header
       cat addressbook.csv | tail -7. You can also use cat addressbook.csv | grep -v ^Name
 
 #### display the content of the file without the header and order the content by name ( in ascending , then descending order)
