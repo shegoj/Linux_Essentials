@@ -44,6 +44,9 @@ Ensure the following is installed and working
 - Number of users currently connected to the machine
 - Check how much memory is on the system and how much is used and free.
 - Check the number of CPUs on the system and its details 
+- list the entire content (including hidden files) in /tmp directory
+- create an alias (use your name as the alias) for the command usd above
+
 
 
 #### Linux Type, version and kernel number
@@ -80,6 +83,13 @@ Ensure the following is installed and working
 #### Check the number of CPUs on the system and its details
     lscpu
 
+####   list the entire content (including hidden files) in /tmp directory
+
+    ls -altr /tmp
+
+#### create an alias (use your name as the alias) for the command usd above
+    alias olu='ls -altr /tmp'
+    olu
 
 
 ### Task 2. Working with shortcut keys.
