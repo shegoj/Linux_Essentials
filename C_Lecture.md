@@ -1,4 +1,5 @@
-#  Linux Essentials 1 [ Februrary 2017]
+#  Linux Essentials 1 [ August  2017]
+![screengrab](screengrab.png?raw=true "screengrab")
 
 ## Lecture 3 [  Managing Applications [Yum and Apache ]
 

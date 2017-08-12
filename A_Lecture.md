@@ -45,6 +45,7 @@ Ensure the following is installed and working
 - Check how much memory is on the system and how much is used and free.
 - Check the number of CPUs on the system and its details 
 
+
 #### Linux Type, version and kernel number
 
     cat /etc/*release*
@@ -89,7 +90,7 @@ Ensure the following is installed and working
 
 ### Task 3. Navigating across the system
 
-Note: Now that we are familiar with some of Linux commands, let's explore navigating and creating directories ( and files)
+Note: Now that we are famil	iar with some of Linux commands, let's explore navigating and creating directories ( and files)
 
 - determine your current location on the system
 - go to your home directory and confirm you are in your home directory.
@@ -133,7 +134,7 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
         mkdir {1..7}   . Using curl bracket makes multiple creation of directories possible. See also mkdir {a..f}, mkdir {A..Z}, mkdir Project{1..4}
         
 ####  Now list all the directories created: 
-        ls -l
+        ls -latr
 
 ### Task 4: Working with `echo` command 
 
@@ -198,6 +199,42 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 
 #### Delete Feb directory
     rm -rf Feb
+
+
+### Task 9: System PATH
+- show current System PATH value
+- create bin directory in /tmp , then add the directory to the System PATH. Test that it is added
+- log out of Linux and log back in. Check System Path again and see if /tmp/bin is still included.
+
+#### show current System PATH value
+     echo $PATH
+
+#### create bin directory in /tmp, add the directory to the System PATH.
+     mkdir /tmp/bin
+     export PATH=$PATH:/tmp/bin
+     echo $PATH
+
+
+#### log out of Linux and log back in. Check System Path again and see if /tmp/bin is still included
+     exit
+     connect back and run  echo $PATH
+
+
+
+### Task 10: Working with Linux  root/sudo
+
+- create a "message of the day"  motd as a root user
+- check that it works
+
+
+#### create a "message of the day"  motd as root
+     become root usr with command sudo su - (or use sudo -i) . Note please check with tutor to further explain the command in detail
+     echo -e "************************\n\n Message of The Day\n DAY 1 Tutorila \n\n***********************************" > /etc/motd
+
+#### check that it works
+     To test, exit the Linux instance and reconnect or create a new connect
+     exit
+     exit
 ---
 
 ## Summary
