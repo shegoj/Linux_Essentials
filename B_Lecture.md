@@ -293,7 +293,7 @@ Ensure the following is installed and working
 
 #### create a new ordered file ( by name), replace "," in file with ":" and name it processed.csv
 
-     cat addressbook.txt | grep -v ^Name | sort| awk -F, '{ print $1 ":" $2 ":" $3 ":" $4}' >> processed.csv
+     cat addressbook.csv | grep -v ^Name | sort| awk -F, '{ print $1 ":" $2 ":" $3 ":" $4}' >> processed.csv
 
 #### display only the  names of users on this Linux machine  provisioned with bash shell
      cat /etc/passwd | grep bash$
