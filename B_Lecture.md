@@ -90,7 +90,7 @@ Ensure the following is installed and working
 
     type: vim config.txt
     navigate to the 4th line
-    press escape button, then press 'dd' to copy the line
+    press escape button, then press 'dd' to delete the line
     press esc, then ':x!' ( to save and exit)
 
 
