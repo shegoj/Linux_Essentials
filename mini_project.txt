@@ -1,0 +1,22 @@
+1] create a file called script1.sh with the following entry
+
+
+#!/bin/sh
+# script checks if parameter supplied  directory or not
+if [ -d $1 ]
+  then
+     echo "$1 is a directory"
+fi
+
+#==================================
+
+Now try the script by executing ' sh script1.sh /tmp'. The test with other directoies such /opt /var etc
+
+
+2] Now extend the script to test if parameter is a file or directory and it should say what it is
+
+3] Extend the script to list the directory content if it detects the parameter is a directory
+
+4] add the script location to your system PATH so it can be called or executed from anywhere.
+
+5] Ping me if you have need more exercise.
