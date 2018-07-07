@@ -1,4 +1,4 @@
-#  Linux Essentials 1 [ May 2017]
+#  Linux Essentials 1 [ July 2018]
 
 ## Lecture 2 [ File Access And Manipulaton ]
 

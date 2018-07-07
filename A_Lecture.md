@@ -1,4 +1,4 @@
-#  Linux Essentials 1 [ May 2017]
+#  Linux Essentials 1 [ July 2018]
 
 This guide provides simple practical steps to learning and using Linux. It will take about an hour to complete
 
