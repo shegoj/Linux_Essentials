@@ -1,4 +1,4 @@
-#  Linux Essentials 1 [ July 2018]
+#  Devops Essentials Mdodule 1 [ March 2019]
 
 This guide provides simple practical steps to learning and using Linux. It will take about an hour to complete
 
@@ -33,7 +33,7 @@ Ensure the following is installed and working
 
 ---
 
-###  Task 1: System Info: You have been asked by a senior admininstrator to provide the following information of a Linux server
+###  Task 1: System Info: You have been asked to provide the following information of the node that has just been provisioned
 
 - Linux Type, version and kernel number 
 - Name, IP address, number of network card (interface) 
@@ -117,18 +117,18 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
         mkdir events
         cd events
 
-####  Create `2016` directory in `events`
-        mkdir 2016
+####  Create `2019` directory in `events`
+        mkdir 2019
 
-####  Create Jan-Mar ( or 1-12) directories in `2016` : 
-        cd 2016
+####  Create Jan-Mar ( or 1-12) directories in `2019` : 
+        cd 2019
         mkdir Jan 
         mkdir Feb 
         mkdir Mar 
 
 
-####  Create 1..7 directories in `2016` : 
-        pwd  . To ensure  you are still in `2006` directory
+####  Create 1..7 directories in `2019` : 
+        pwd  . To ensure  you are still in `2019` directory
         mkdir {1..7}   . Using curl bracket makes multiple creation of directories possible. See also mkdir {a..f}, mkdir {A..Z}, mkdir Project{1..4}
         
 ####  Now list all the directories created: 
@@ -198,6 +198,9 @@ Note: Now that we are familiar with some of Linux commands, let's explore naviga
 #### Delete Feb directory
     rm -rf Feb
 ---
+
+
+### Task 9: Install a webserver on the Frontend node and test you are able to access it  [ you may try with HTTPD or NGINX ]
 
 ## Summary
 
